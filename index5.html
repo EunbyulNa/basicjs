@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body {
+        background-color: yellow;
+      }
+      div {
+        width: 500px;
+        height: auto;
+        background-color:#fff;
+        margin: 200px auto;
+        text-align: center;
+        padding: 20px;
+        opacity: .9;
+      }
+
+      #first {
+        font-size: 20px;
+        padding-top: 20px;
+      }
+
+      #second {
+        line-height: 40px;
+        background-color: green;
+        color:#fff;
+
+      }
+
+     .third {
+       line-height: 40px;
+       background-color: blue;
+       color:#fff;
+     }
+    </style>
+
+  </head>
+  <body>
+   <div class="">
+     <h1>JS 연습</h1>
+     <p> 1 + 5는? <span id="first"></span></p>
+     <p id="second">두번쨰</p>
+     <p><span id="third">세번째</span> / <span id="fourth">네번째</span></p>
+
+   </div>
+  </body>
+  <script type="text/javascript">
+var aa, bb, cc, dd;
+aa = 1;
+bb = 5;
+cc=275;
+dd=52;
+ee= 44;
+ff= 89;
+
+var sum = aa+bb;
+
+var elSum = document.getElementById('first');
+elSum.textContent = '정답은' + sum;
+
+cd = cc* dd;
+var elmul = document.getElementById('second');
+elmul.textContent = '정답은 ' + cd + ' 입니당';
+
+ef1= ee/ff;
+var elthird = document.getElementById('third');
+elthird.textContent = '나누기는 ' +  ef1;
+
+ef2 = ee % ff;
+var elfour = document.getElementById('fourth');
+elfour.textContent = '나누고 남은 수는 ' + ef2;
+
+  </script>
+</html>
